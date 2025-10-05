@@ -59,7 +59,23 @@ main {
 
 /* ---------------------- */
 
-/* Our Popular Tours */
+/* Our Popular Tours AND A Simple Perfect Place To Get Lost*/
+
+/* Perfect Place */
+.perfect_img{
+    background-image: url("/Images/Group\ 40089.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 425px;
+    width: 100%;
+}
+.perfect_img_tittle{
+    text-align: center;
+    color: white;
+    padding: 175px 165px;
+    font-size: 25px;
+    font-weight: bold;
+}
 .populerText {
     margin-bottom: 3.5rem;
 }
@@ -175,5 +191,16 @@ main {
         max-width:100%;
         margin-top: 25px;
     }
+    .perfect_img{
+        height: 450px;
+    }
+    .perfect_img_tittle{
+    text-align: center;
+    color: white;
+    padding: 100px 50px;
+    font-size: 25px;
+    font-weight: bold;
+}
     
+
 }
