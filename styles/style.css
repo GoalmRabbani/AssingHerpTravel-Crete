@@ -2,18 +2,21 @@
 
 
 .mulish-Font {
-  font-family: "Mulish", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 
-
-header {
+/* website Content Center */
+header,
+main {
     max-width: 1200px;
     margin: 0 auto;
 }
 
+
+/* Navbar styles */
 .brand {
     font-size: 36px;
     font-weight: bolder;
@@ -25,22 +28,92 @@ header {
 
 .navleft,
 .navlist {
+    list-style: none;
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 25px;
 }
 
-.navlist li>a {
+.navlist a {
     text-decoration: none;
     color: #424247;
 }
 
+/* .navlist a:hover{
+    color: #FF5400;
+} */
+
 .navlist li {
-    list-style: none;
+    padding: 5px;
 }
 
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.navlist li:hover {
+    background-color: #f0f0f0;
+}
+
+/* ---------------------- */
+
+/* Our Popular Tours */
+.populerText{
+    margin-bottom: 3.5rem;
+}
+.popular_tittle {
+    font-size: 40px;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+
+.popular_descrip,.popular_list {
+    color: #424247;
+    margin: 25px 0;
+    line-height: 30px;
+}
+
+.popular {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 55px;
+
+}
+
+
+.populerImg img {
+    height: 100%;
+}
+
+
+
+/* Button  */
+.btn {
+    border: none;
+    border-radius: 5px;
+    padding: 14px 35px;
+    color: white;
+    font-weight: bold;
+    background-color: #FF5400;
+}
+
+
+
+
+
+
+/* Small device */
+@media (max-width:600px) {
+  .popular,.navbar{
+    flex-direction: column;
+  }  
+  .popular img{
+    width: 100%;
+  }
+  .populerText{
+    margin-bottom: 0;
+  }
 }
