@@ -60,16 +60,18 @@ main {
 /* ---------------------- */
 
 /* Our Popular Tours */
-.populerText{
+.populerText {
     margin-bottom: 3.5rem;
 }
+
 .popular_tittle {
     font-size: 40px;
     font-weight: bolder;
     margin-bottom: 30px;
 }
 
-.popular_descrip,.popular_list {
+.popular_descrip,
+.popular_list {
     color: #424247;
     margin: 25px 0;
     line-height: 30px;
@@ -83,10 +85,59 @@ main {
 
 }
 
-
 .populerImg img {
     height: 100%;
 }
+
+/* Why Choose Us sections */
+
+.chooseUs_tittle {
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.chooseUs_descrip {
+    color: #424247;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.chooseUs_cards {
+    display: flex;
+    gap: 25px;
+}
+
+.chooseUs_card {  
+    border: 1px bisque solid;
+    border-radius: 16px;
+    padding: 32px;
+    /* background-color: bisque; */
+    background-image: linear-gradient(#f5f1ed, #faf3ed);
+}
+
+.chooseUsRight_card {
+    background-image: linear-gradient(#e1e8eb, #e2ecf1);
+    border: none;
+
+}
+
+#chooseUs_card {
+    max-width: 50%;
+    margin: 0 auto;
+    margin-top: 55px;
+}
+
+.chooseUs_card h4 {
+    font-size: 25px;
+    margin-bottom: 0;
+    font-weight: bolder;
+}
+
+.chooseUs_card p {
+    color: #424247;
+}
+
 
 
 
@@ -107,13 +158,22 @@ main {
 
 /* Small device */
 @media (max-width:600px) {
-  .popular,.navbar{
-    flex-direction: column;
-  }  
-  .popular img{
-    width: 100%;
-  }
-  .populerText{
-    margin-bottom: 0;
-  }
+
+    .popular,
+    .navbar,
+    .chooseUs_cards {
+        flex-direction: column;
+    }
+    .popular img {
+        width: 100%;
+    }
+    .populerText {
+        margin-bottom: 0;
+    }
+
+    #chooseUs_card {
+        max-width:100%;
+        margin-top: 25px;
+    }
+    
 }
