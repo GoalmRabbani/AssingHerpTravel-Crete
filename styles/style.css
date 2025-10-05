@@ -63,7 +63,7 @@ main {
 
 /* Perfect Place */
 .perfect_img{
-    background-image: url("/Images/Group\ 40089.png");
+    background-image: url("../Images/Group\ 40089.png");
     background-repeat: no-repeat;
     background-size: contain;
     height: 425px;
